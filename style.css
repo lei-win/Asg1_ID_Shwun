@@ -1,131 +1,67 @@
-/*body*/
-
-html,
+/* Make page dark*/
 body {
-	height: 100%;
-	font-family: "Now Regular";
-	-webkit-font-smoothing: antialiased;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b0b0b;
+  color: white;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0;
-	color: #111111;
-	font-weight: 400;
-	font-family: "Rajdhani", sans-serif;
+header {
+  background: #150000; /* same as navbar */
 }
 
-h1 {
-	font-size: 70px;
+
+/* NAVBAR */
+
+header {
+  background: #150000;              /* same dark red as bar */
 }
 
-h2 {
-	font-size: 36px;
+/* whole top bar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+
+  background: #150000;              /* ONE solid colour */
+  z-index: 10;
 }
 
-h3 {
-	font-size: 30px;
+/* logo text */
+.logo {
+  margin: 0;
+  color: #ffffff;
+  font-size: 28px;
+  letter-spacing: 3px;
 }
 
-h4 {
-	font-size: 24px;
+/* list of links */
+.nav-links {
+  list-style: none;
+  margin: 0;
+  margin-left: auto;                /* pushes links to the right */
+  padding: 0;
+
+  display: flex;
+  gap: 60px;                        /* spacing between links */
 }
 
-h5 {
-	font-size: 18px;
+/* links style */
+.nav-links a {
+  color: #fceccb;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 12px;
 }
 
-h6 {
-	font-size: 16px;
-}
-
-p {
-	font-size: 15px;
-	font-family: "Now Regular";
-	color: #444444;
-	font-weight: 400;
-	line-height: 26px;
-	margin: 0 0 15px 0;
-}
-
-img {
-	max-width: 100%;
-}
-
-input:focus,
-select:focus,
-button:focus,
-textarea:focus {
-	outline: none;
-}
-
-a:hover,
-a:focus {
-	text-decoration: none;
-	outline: none;
-	color: #ffffff;
-}
-
-ul,
-ol {
-	padding: 0;
-	margin: 0;
-}
-
-/*helper css*/
-
-.section-title {
-	margin-bottom: 40px;
-	position: relative;
-	z-index: 1;
-}
-
-.section-title.center-title {
-	text-align: center;
-}
-
-.section-title h2 {
-	font-size: 42px;
-	color: #111111;
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.section-title h1 {
-	font-size: 100px;
-	color: #f2f2f2;
-	font-family: "Rockville Solid Regular";
-	position: absolute;
-	left: 0;
-	top: -45px;
-	width: 100%;
-	z-index: -1;
-}
-
-.set-bg {
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: top center;
-}
-
-.spad {
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-
-.text-white h1,
-.text-white h2,
-.text-white h3,
-.text-white h4,
-.text-white h5,
-.text-white h6,
-.text-white p,
-.text-white span,
-.text-white li,
-.text-white a {
-	color: #fff;
+/* hover (optional) */
+.nav-links a:hover {
+  color: #ffffff;
 }
